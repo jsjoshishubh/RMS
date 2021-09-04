@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background=" 	#2C1741"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="15dp"
+    android:fontFamily="cursive"
+    android:shadowColor="#DAF7A6"
+    android:text="RMS VERIFY"
+    android:textColor="#FCC201"
+    android:textSize="30dp"
+    android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="35dp"
+        android:background="#FFF8DC"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="195dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/restro" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_Phone"
+        android:layout_width="75dp"
+        android:layout_height="95dp"
+        android:layout_below="@id/relativeLayout"
+        android:layout_gravity="center"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/index"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginRight="20dp"
+            android:padding="4dp"
+            android:fontFamily="cursive"
+            android:text="Enter Phone Number For Verification"
+            android:textColor="#FCC201"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextMobile"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@id/textView"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/gb_round"
+            android:digits="0123456789"
+            android:hint="Enter Your Mobile Number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:padding="9.5dp"
+            android:textSize="21dp" />
+
+        <Button
+            android:id="@+id/buttonContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextMobile"
+            android:layout_gravity="center"
+            android:layout_marginTop="22dp"
+            android:background="#800000"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="#e8d9e0"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:fontFamily="cursive"
+            android:text="Verify Your Phone For Your Menu..!!"
+            android:textColor="#FCC201"
+            android:textSize="25dp"
+            android:layout_marginLeft="65dp"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

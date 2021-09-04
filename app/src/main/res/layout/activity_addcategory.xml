@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/restaaaa"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".addcategory">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="*Add Category*!!"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+
+    <EditText
+        android:id="@+id/txt_add_cat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="80dp"
+        android:background="@drawable/gb_round"
+        android:hint="Add Category"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btn_add_cat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="Add"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginVertical="80dp"
+        android:fontFamily="cursive"
+        android:text="Add It And Eat it !_!"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="33dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

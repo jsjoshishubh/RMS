@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#152246"
+    android:orientation="vertical"
+    tools:context=".RmsVerificationCode">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:fontFamily="cursive"
+        android:shadowColor="#DAF7A6"
+        android:text="Code Verify"
+        android:textColor=" 	#FFD700"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="35dp"
+        android:background="#ffffe6"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="195dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/restro" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_Phone"
+        android:layout_width="75dp"
+        android:layout_height="95dp"
+        android:layout_below="@id/relativeLayout"
+        android:layout_gravity="center"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/index"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="cursive"
+            android:text="Wait For Code"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textColor=" 	#FFD700"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/editTextCode"
+            android:layout_width="237dp"
+            android:layout_height="41dp"
+            android:layout_below="@id/progressbar"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/gb_round"
+            android:digits="0123456789"
+            android:hint="enter verification code"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:padding="9.5dp" />
+
+        <Button
+            android:id="@+id/Bt_SignIN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextMobile"
+            android:layout_gravity="center"
+            android:layout_marginTop="22dp"
+            android:background="#800000"
+            android:text="Sign IN"
+            android:textAllCaps="false"
+            android:textColor="#FFD700"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="275dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="cursive"
+            android:text="Let's Start...!!"
+            android:textColor=" 	#FFD700"
+            android:textSize="25dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
